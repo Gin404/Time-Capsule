@@ -1,0 +1,38 @@
+#menu {
+    height: 100px; width: 630px;
+    overflow: hidden;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#menu ul li {
+    float: left;
+    margin: 0 5px;
+    list-style-type: none;
+}
+
+/* Menu Link Styles */
+#menu form input {
+    display: block;
+    background: #e70f23; color: #fff;
+    height: 100px; width: 200px;
+    font: lighter 2em/100px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-decoration: none;
+
+    -webkit-transition: margin .4s ease-in-out;
+    -moz-transition: margin .4s ease-in-out;
+    -o-transition: margin .4s ease-in-out;
+    -ms-transition: margin .4s ease-in-out;
+    transition: margin .4s ease-in-out;
+}
+
+/* Secondary Link Styles */
+#menu form input:nth-of-type(even) {
+    background: #000;
+    color: white;
+}
+
+/* Hover Slide */
+#menu form li:hover :first-child {
+    margin-top: -100px;
+}
